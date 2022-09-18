@@ -1,0 +1,56 @@
+.two {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
+
+    .descriptions{
+        // border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        height: 720px;
+        padding: 165px 160px;
+    }
+
+
+    .first {
+        background: url("../src/images/desktop/image-transform.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    .second {
+        background: url("../src/images/desktop/image-stand-out.jpg")no-repeat center center;
+        background-size: cover;
+    }
+    .third {
+        background: url("../src/images/desktop/image-graphic-design.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    .fourth {
+        background: url("../src/images/desktop/image-photography.jpg")no-repeat center center;
+        background-size: cover;
+    }
+
+    .additional {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .wrapper-second {
+        padding-left: 195px;
+        padding-right: 195px;
+        padding-bottom: 65px;
+        text-align: center;
+
+
+    }
+
+}
