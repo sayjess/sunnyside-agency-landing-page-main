@@ -1,54 +1,73 @@
-.two {
+.container {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     display: grid;
     gap: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 37.5rem 37.5rem 37.5rem;
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    // grid-template-rows: repeat(3, 1fr);
 
-    .descriptions{
-        // border: 2px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10.3rem 10rem;
+    
+    .ads {
+        // width: 50%;
+        height: 75vh;
+
     }
 
-
-    .first {
+    .ads_two {
         background: url("../src/images/desktop/image-transform.jpg") no-repeat center center;
         background-size: cover;
     }
-    .second {
+    .ads_three {
         background: url("../src/images/desktop/image-stand-out.jpg")no-repeat center center;
         background-size: cover;
     }
-    .third {
+    .ads_five {
         background: url("../src/images/desktop/image-graphic-design.jpg") no-repeat center center;
         background-size: cover;
     }
-    .fourth {
+    .ads_six {
         background: url("../src/images/desktop/image-photography.jpg")no-repeat center center;
         background-size: cover;
     }
 
-    .additional {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-    }
+}
 
-    .wrapper-second {
-        padding-left: 12rem;
-        padding-right: 12rem;
-        padding-bottom: 4rem;
-        text-align: center;
+@media only screen and (max-width: 375px) {
+    .container{
+        display: grid;
+        gap: 0;
+        grid-template-columns: 1fr;
+
+        .ads {
+            width: 100vw;
+            height: 75vh;
+        }
+
+        .ads_one{
+            grid-area: 2 / 1 / 3 / 2;
+
+        }
+        .ads_two{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .ads_three{
+            grid-area: 3 / 1 / 4 / 2;
+        }
+        .ads_four{
+            grid-area: 4 / 1 / 5 / 2;
+        }
+        .ads_five{
+            grid-area: 5 / 1 / 6 / 2;
+        }
+
+        .ads_six {
+            grid-area: 6 / 1 / 7 / 2;
+        }
 
 
     }
 
 }
+
