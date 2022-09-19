@@ -1,15 +1,15 @@
 .wrapper_one {
     height: 100vh;
-    width: 100vw;
+    max-width: 100%;
     background: url("../src/images/desktop/image-header.jpg") no-repeat center center;
     background-size: cover;
+    padding-top: 2rem;
+    padding-right: 2rem;
 
     .wrapper_two {
         display: flex; 
         justify-content: space-between;
-        margin: 10px;
-        margin-top: 0;
-        padding: 20px;
+        padding-left: 2rem;
         // border: 2px solid red;
         height: 2rem;
         color: $white;
