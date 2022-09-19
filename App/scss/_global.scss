@@ -9,8 +9,13 @@ html{
 }
 
 * {
-    outline: 1px solid #f00 !important;
-  }
+    box-sizing: border-box;
+}
+
+// all {
+//     outline: 1px solid #f00 !important;
+//     box-sizing: border-box; allows the whole html to calculate to a 100% together with the padding and margin
+//   }
 
 
 
