@@ -7,13 +7,17 @@
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     // grid-template-rows: repeat(3, 1fr);
 
+    .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10.3rem 10rem;
+    }
     
     .ads {
         // width: 50%;
         height: 75vh;
-
     }
-
     .ads_two {
         background: url("../src/images/desktop/image-transform.jpg") no-repeat center center;
         background-size: cover;
@@ -29,6 +33,39 @@
     .ads_six {
         background: url("../src/images/desktop/image-photography.jpg")no-repeat center center;
         background-size: cover;
+    }
+    .learn {
+        text-decoration: none;
+        position: relative;
+        top: 7px;
+        left: 6px;
+        text-transform: uppercase;
+        color: $veryDarkDesaturatedBlue;
+        font-family: "Fraunces";
+    }
+
+    .line {
+        
+        width: 8em;
+        height: 0.55em;
+        border-radius: 20px;  
+    }
+    .l-one {
+        background-color: $yellow;
+    }
+    .l-two {
+        background-color: $softRed;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 12rem;
+        padding-right: 12rem;
+        padding-bottom: 4rem;
+        text-align: center;
     }
 
 }
