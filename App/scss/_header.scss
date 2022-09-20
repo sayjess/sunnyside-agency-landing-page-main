@@ -81,8 +81,17 @@
 }
 
 @media only screen and (max-width: 650px) {
-    .wrapper_one {
+    html {
         height: 100%;
-        width: 100%;
+        box-sizing: border-box;
+    }
+    .wrapper_one {
+        
+        height: 100vh;
+        max-width: 100%;
+        background: url("/src/images/mobile/image-header.jpg") no-repeat center center;
+        background-size: cover;
+        
+
     }
 }
