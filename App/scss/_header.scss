@@ -79,3 +79,10 @@
         
     }
 }
+
+@media only screen and (max-width: 650px) {
+    .wrapper_one {
+        height: 100%;
+        width: 100%;
+    }
+}
