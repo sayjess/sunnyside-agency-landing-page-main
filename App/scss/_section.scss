@@ -7,6 +7,7 @@
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     // grid-template-rows: repeat(3, 1fr);
 
+    
     .desc {
         display: flex;
         flex-direction: column;
@@ -106,7 +107,6 @@
         .ads_six {
             grid-area: 6 / 1 / 7 / 2;
         }
-
 
     }
 
