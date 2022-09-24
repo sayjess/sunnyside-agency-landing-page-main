@@ -1,7 +1,7 @@
 .container {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     display: grid;
     gap: 0;
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
@@ -63,8 +63,7 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        padding-left: 12rem;
-        padding-right: 12rem;
+        padding: 0 7%;
         padding-bottom: 4rem;
         text-align: center;
     }
@@ -80,10 +79,10 @@
         grid-template-columns: 1fr;
 
         .ads {
-            max-width: 100%;
+            max-width: 100vw;
             height: 75vh;
-            resize: horizontal;
-            overflow: auto;
+            // resize: horizontal;
+            // overflow: auto;
         }
 
         .ads_one{
@@ -106,6 +105,32 @@
 
         .ads_six {
             grid-area: 6 / 1 / 7 / 2;
+        }
+
+        .desc{
+            font-size: 94%;
+            padding: 15%;
+            margin: 0;
+            text-align: center;
+            line-height: 124%;
+        }
+
+        .line{
+            position: relative;
+            z-index: -1;
+            left: 30%;
+            // margin: 0 auto
+            // display: flex;
+
+            
+        }
+        h2 {
+            padding-bottom: 10%;
+        }
+        a {
+            padding-top: 10%;
+            margin: 0 auto;
+
         }
 
     }
