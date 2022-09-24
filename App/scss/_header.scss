@@ -1,10 +1,11 @@
 .wrapper_one {
     height: 100vh;
-    width: 100vw;
+    max-width: 100%;
     background: url("../src/images/desktop/image-header.jpg") no-repeat center center;
     background-size: cover;
     padding-top: 2rem;
     padding-right: 2rem;
+    overflow: hidden;
 
     .wrapper_two {
         display: flex; 
@@ -20,9 +21,9 @@
             display: flex;
             align-items: center;
             font-family: "Fraunces";
-            background-image: url("/src/images/logo.svg");
-            width: 124px; 
-            height: 24px;
+            // background-image: url("/src/images/logo.svg");
+            // width: 124px; 
+            // height: 24px;
             border: none;
             margin-top: 2px;
         }
@@ -88,23 +89,45 @@
 @media only screen and (max-width: 650px) {
     .wrapper_one {
         height: 150vh;
-        width: 100%;
         background: url("../src/images/mobile/image-header.jpg") no-repeat center center;
         background-size: cover;
     
         .wrapper_two{
+            .logo{
+                img{
+                    position: relative;
+                    top: 132%;
+                    height: 40px;
+                }
+                
+            }
             i {
                 display: block;
                 color: $white;
                 position: relative;
-                right: 0;
-                
+                right: 3%;
+                top: 70%;  
             }
         
             nav {
                 display: none;
             }
 
-        }   
+        } 
+        section {
+            h1{
+                text-align: center;
+                font-size: 400%;
+                margin-top: 35%;
+            }
+            div {
+                margin: 0;
+                padding: 0;
+                img{
+                    margin-top: 16%;
+                    height: 11em;
+                }
+            }
+        }
     }
 }
