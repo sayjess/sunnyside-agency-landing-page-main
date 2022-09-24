@@ -5,14 +5,12 @@ html{
     width: 100%;
     overflow-x: hidden;
     
-    
 
 }
 
 *, *::after, *::before{
     box-sizing: inherit;
     margin: 0;
-    padding: 0;
 }
 
 // all {
@@ -21,6 +19,8 @@ html{
 //   }
 
 body {
+    
+    font-size: inherit;
     background-color: white;
     display: grid;
     grid-template-columns: minmax(600px, 1fr);
