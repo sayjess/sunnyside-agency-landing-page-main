@@ -9,6 +9,7 @@ function dropMenu() {
     const section = document.querySelector(".head-design");
     hamburger.addEventListener("click", function(){
     navmobile.classList.toggle("nav-mobile");
+    // navmobile.style.transition = "all 2s ease";
     section.classList.toggle("section-off");
     });
 }
