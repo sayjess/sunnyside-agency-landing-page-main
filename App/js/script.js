@@ -1,14 +1,18 @@
-
+//create a function which toggles:
+//section-off
+//nav-mobile
+//when hamburger is clicked
 
 function dropMenu() {
-    const nav = document.getElementsByClassName("fa-solid");
-    const dropdown = document.getElementById("nav");
-    //   dropdown.classList.toggle("nav-mob");
-      nav.addEventListener("click", function(){
-        dropdown.classList.toggle('nav-pc');
-        console.log("clicked");
-      });
-  }
+    const navmobile = document.querySelector("nav");
+    const hamburger = document.querySelector(".hamburger");
+    const section = document.querySelector(".head-design");
+    hamburger.addEventListener("click", function(){
+    navmobile.classList.toggle("nav-mobile");
+    section.classList.toggle("section-off");
+    });
+}
 
-//   nav.addEventListener("click", dropMenu);
+dropMenu();
+
   
