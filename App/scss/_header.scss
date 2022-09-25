@@ -13,7 +13,7 @@
         padding-left: 2rem;
         // border: 2px solid red;
         height: 2rem;
-        color: $white;
+        color: $white; 
         // background-color: $skyBlue;
         
 
@@ -33,7 +33,7 @@
         }
         
 
-        nav {
+        .nav-pc {
             display: flex;
             align-items: flex-end;
             font-family: "Barlow";
@@ -113,8 +113,13 @@
                 top: 70%;  
             }
         
-            nav {
+            #nav {
                 display: none;
+            }
+
+            .nav-mob {
+                // clip-path: polygon(0 14%, 85% 14%, 100% 0, 100% 100%, 75% 100%, 44% 100%, 0 100%);
+                display: block;
             }
 
         } 
