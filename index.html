@@ -15,32 +15,32 @@
 <body>
 
     <!-- HEADER -->
-    <header class="wrapper_one">
+    <div class="wrapper_one">
         <!-- SUNNYSIDE LOGO --> 
-        <main class="wrapper-main">
+        <header class="wrapper-main" role="header">
             <div class="wrapper_two">
-                <a href="index.html" class="logo-sunnyside"><img src="src\images\logo.png" alt=""></a>
+                <a href="index.html" class="logo-sunnyside"><img src="src/images/logo.png" alt="" aria-label="sunnyside logo"></a>
                 <i class="hamburger fa-solid fa-bars fa-2x"></i>
             </div>
             <!-- NAVIGATION -->
-            <nav class="nav-pc">
+            <nav class="nav-pc" role="navigation">
                 <a class="about" href="">About</a>
                 <a class="services" href="">Services</a>
                 <a class="projects" href="">Projects</a>
                 <button class="contact" href="">CONTACT</button>
             </nav>
-        </main>
+        </header>
         <!-- INTRO -->
-        <section class="head-design">
+        <main class="head-design" role="main-content">
             <h1>WE ARE CREATIVES</h1>
             <!-- ARROW ICON -->
             <div>
-                <img class="arrow" src="src\images\icon-arrow-down.svg" alt="">
+                <img class="arrow" src="src/images/icon-arrow-down.svg" alt="" role="arrow-down-design">
             </div>
-        </section>
-    </header>
+        </main>
+    </div>
 
-    <section class="container">
+    <section class="container" role="service-advertisement">
         <div class="ads ads_one desc">
             <h2>Transform your brand</h2>
             <p>We are a full-service creative agency specializing in helping brands grow fast. 
@@ -67,43 +67,43 @@
         </div>
     </section>
 
-    <article>
+    <article role="client-testimonials">
         <h2>Client testimonials</h2>
         <div class="wrapper_three">
             <div class="client client_one">
-                <img src="src\images\image-emily.jpg" alt="">
+                <img src="src/images/image-emily.jpg" alt="">
                 <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
                 <h3>Emily R.</h3>
                 <h4>Marketing Director</h4>
             </div>
             <div class="client client_two">
-                <img src="src\images\image-thomas.jpg" alt="">
+                <img src="src/images/image-thomas.jpg" alt="">
                 <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
                 <h3>Thomas S.</h3>
                 <h4>Chief Operating Officer</h4>
             </div>
             <div class="client client_three">
-                <img src="src\images\image-jennie.jpg" alt="">
+                <img src="src/images/image-jennie.jpg" alt="">
                 <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
                 <h3>Jennie F.</h3>
                 <h4>Business Owner</h4>
             </div>
         </div>
     </article>
-    <section class="wrapper_four">
-        <img class="img_one" src="src\images\desktop\image-gallery-milkbottles.jpg" alt="">
-        <img class="img_two" src="src\images\desktop\image-gallery-orange.jpg" alt="">
-        <img class="img_three" src="src\images\desktop\image-gallery-cone.jpg " alt="">
-        <img class="img_four" src="src\images\desktop\image-gallery-sugarcubes.jpg" alt="">
+    <section class="wrapper_four" role="images">
+        <img class="img_one" src="src/images/desktop/image-gallery-milkbottles.jpg" alt="">
+        <img class="img_two" src="src/images/desktop/image-gallery-orange.jpg" alt="">
+        <img class="img_three" src="src/images/desktop/image-gallery-cone.jpg " alt="">
+        <img class="img_four" src="src/images/desktop/image-gallery-sugarcubes.jpg" alt="">
     </section>
-    <footer>
-        <a class="footer-logo" href="index.html"><img src="src\images\logo.png" git alt=""></a>
+    <footer role="footer">
+        <a class="footer-logo" href="index.html"><img src="src/images/logo.png" alt="" aria-label="sunnyside logo"></a>
         <div class="details">
             <a class="about-footer" href="">About</a>
             <a class="services-footer" href="">Services</a>
             <a class="projects-footer" href="">Projects</a>
         </div>
-        <div class="social-medias">
+        <div class="social-medias" role="social-media-links">
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -111,7 +111,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="App/js/script.js"></script>
+    <script src="App/js/script.js"></script>
 
 
     
